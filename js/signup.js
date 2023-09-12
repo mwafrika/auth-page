@@ -2,9 +2,13 @@ const formSignup = document.getElementById("form-signup");
 
 const validateForm = (email, password, name) => {
   if (email.length < 3 || password.length < 3 || name.length < 6) {
-    alert(
-      "The minimum length of the email and password is 3, and 6 for the name."
-    );
+    Toastify({
+      text: "The minimum length of the email and password is 3, and 6 for the name.",
+      className: "danger",
+      style: {
+        background: "linear-gradient(to right, #ff0000, #ff5733)",
+      },
+    }).showToast();
     return false;
   }
   return true;
