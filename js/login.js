@@ -2,7 +2,13 @@ const form = document.getElementById("form");
 
 const validateForm = (email, password) => {
   if (email !== "mwafrika@gmail.com" || password !== "123456") {
-    alert("Credentials are not correct");
+    Toastify({
+      text: "Credentials are not correct",
+      className: "danger",
+      style: {
+        background: "linear-gradient(to right, #ff0000, #ff5733)",
+      },
+    }).showToast();
     return false;
   }
   return true;
