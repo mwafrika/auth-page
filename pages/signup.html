@@ -10,24 +10,30 @@
     <main class="container">
       <div class="content">
         <div class="form-container">
-          <form action="form" id="form">
+          <form action="form" id="form-signup">
             <div class="title">
-              <h1>Welcome Back</h1>
-              <p>Welcome back, Please enter your credentials</p>
+              <h1>Welcome</h1>
+              <p>Welcome back, Please create a new account</p>
             </div>
 
             <div>
               <input
+                type="text"
+                placeholder="Enter your full name"
+                required
+                id="name"
+              />
+              <input
                 type="email"
                 placeholder="Enter your email"
                 required
-                id="email"
+                id="email-signup"
               />
               <input
                 type="password"
                 placeholder="Enter your password"
                 required
-                id="password"
+                id="password-signup"
               />
             </div>
             <div class="remember">
@@ -45,8 +51,8 @@
               </span>
             </div>
             <p class="new-account">
-              Don't have an account ?
-              <span> <a href="/pages/signup.html">Sign up for free</a></span>
+              Do you already have an account ?
+              <span><a href="/pages/login.html">Login</a></span>
             </p>
           </form>
         </div>
