@@ -1,0 +1,14 @@
+{
+  "name": "auth-page",
+  "version": "1.0.0",
+  "description": "This page is a simple authentication page with a login and register form. It is made with HTML, CSS and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.2"
+  }
+}
